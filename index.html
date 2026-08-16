@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9f2431" />
+    <meta
+      name="description"
+      content="Create professional tiling, shower retiling and renovation quotations with Atlas Quote."
+    />
+    <title>Atlas Quote</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="#top" aria-label="Atlas Quote home">
+            <img
+              class="brand-logo"
+              src="atlas-logo.png"
+              alt="Atlas Tiling and Bathroom Renovations"
+            />
+            <span class="brand-copy">
+              <small>Atlas Tiling and Bathroom Renovations</small>
+              <strong>Quote and Invoice Builder</strong>
+            </span>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#new-quote">New Quote</a>
+            <a href="#new-invoice">New Invoice</a>
+            <a href="#shower-retiling">Shower Retiling Quote</a>
+            <a href="#built-in-quotes">4 Built-in Quotes</a>
+          </nav>
+
+          <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+            aria-label="Open navigation"
+          >
+            <svg
+              aria-hidden="true"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav
+          id="mobile-navigation"
+          class="mobile-nav"
+          aria-label="Mobile navigation"
+        >
+          <a href="#new-quote">
+            <span>01</span>
+            New Quote
+            <b aria-hidden="true">→</b>
+          </a>
+          <a href="#new-invoice">
+            <span>02</span>
+            New Invoice
+            <b aria-hidden="true">→</b>
+          </a>
+          <a href="#shower-retiling">
+            <span>03</span>
+            Shower Retiling Quote
+            <b aria-hidden="true">→</b>
+          </a>
+          <a href="#built-in-quotes">
+            <span>04</span>
+            4 Built-in Quotes
+            <b aria-hidden="true">→</b>
+          </a>
+        </nav>
+      </header>
+
+      <div id="top" class="page-shell">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="status-dot"></span>
+              Atlas quotation workspace
+            </div>
+            <h1 id="hero-title">
+              Professional quotes.
+              <br />
+              <span>Built in minutes.</span>
+            </h1>
+            <p>
+              Create accurate tiling and renovation quotes, keep every scope
+              organised and give customers a document you are proud to send.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#new-quote">
+                Start a new quote
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="secondary-button" href="#built-in-quotes">
+                Browse built-in quotes
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="quick-section" aria-labelledby="quick-title">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">Quick start</span>
+              <h2 id="quick-title">What would you like to create?</h2>
+            </div>
+            <span class="section-number">01</span>
+          </div>
+
+          <div class="quick-grid">
+            <a id="new-quote" class="action-card" href="#built-in-quotes">
+              <span class="action-icon gold">
+                <svg
+                  aria-hidden="true"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 4h10a2 2 0 0 1 2 2v14H5V6a2 2 0 0 1 2-2Z"></path>
+                  <path d="M8 9h8M8 13h5M8 17h3"></path>
+                </svg>
+              </span>
+              <span class="action-index">01</span>
+              <h3>Create a new quote</h3>
+              <p>Build a clear, itemised quote for any tiling job.</p>
+              <span class="card-link">
+                Open builder <b aria-hidden="true">→</b>
+              </span>
+            </a>
+
+            <a id="new-invoice" class="action-card" href="#workspace-note">
+              <span class="action-icon blue">
+                <svg
+                  aria-hidden="true"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"></path>
+                  <path d="M9 8h6M9 12h6M9 16h3"></path>
+                </svg>
+              </span>
+              <span class="action-index">02</span>
+              <h3>Create an invoice</h3>
+              <p>Turn completed work into a professional invoice.</p>
+              <span class="card-link">
+                Open builder <b aria-hidden="true">→</b>
+              </span>
+            </a>
+
+            <a id="shower-retiling" class="action-card" href="#workspace-note">
+              <span class="action-icon teal">
+                <svg
+                  aria-hidden="true"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 8a6 6 0 0 1 12 0"></path>
+                  <path d="M5 8h14M8 12v.01M12 12v.01M16 12v.01M8 16v.01M12 16v.01M16 16v.01M12 20v.01"></path>
+                </svg>
+              </span>
+              <span class="action-index">03</span>
+              <h3>Shower retiling</h3>
+              <p>Use your dedicated 10-item shower quote builder.</p>
+              <span class="card-link">
+                Open builder <b aria-hidden="true">→</b>
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section
+          id="built-in-quotes"
+          class="templates-section"
+          aria-labelledby="templates-title"
+        >
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">Atlas templates</span>
+              <h2 id="templates-title">4 built-in renovation quotes</h2>
+              <p>
+                Start with a complete scope, then select items and enter the
+                quantity and price required for the job.
+              </p>
+            </div>
+            <span class="section-number">02</span>
+          </div>
+
+          <div class="template-grid">
+            <a class="template-card" href="#workspace-note">
+              <div class="template-topline">
+                <span class="template-icon">
+                  <svg
+                    aria-hidden="true"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3Z"></path>
+                    <path d="M7 12V7a3 3 0 0 1 6 0M4 9h3M7 19v2M17 19v2"></path>
+                  </svg>
+                </span>
+                <span class="template-number">01</span>
+              </div>
+              <h3>Bathroom Renovation</h3>
+              <p>A complete bathroom scope from demolition to finishing.</p>
+              <span class="template-link">
+                Use this template <b aria-hidden="true">→</b>
+              </span>
+            </a>
+
+            <a class="template-card" href="#workspace-note">
+              <div class="template-topline">
+                <span class="template-icon">
+                  <svg
+                    aria-hidden="true"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 4h14v16H5zM9 4v16M9 11h10M12 8h4M12 15h4"></path>
+                  </svg>
+                </span>
+                <span class="template-number">02</span>
+              </div>
+              <h3>Ensuite &amp; WC</h3>
+              <p>Combined ensuite and toilet renovation quotation.</p>
+              <span class="template-link">
+                Use this template <b aria-hidden="true">→</b>
+              </span>
+            </a>
+
+            <a class="template-card" href="#workspace-note">
+              <div class="template-topline">
+                <span class="template-icon">
+                  <svg
+                    aria-hidden="true"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M8 4h8v7H8zM7 11h10a5 5 0 0 1-5 5h-1a4 4 0 0 1-4-4v-1ZM11 16v4M9 20h6"></path>
+                  </svg>
+                </span>
+                <span class="template-number">03</span>
+              </div>
+              <h3>WC Renovation</h3>
+              <p>A focused quote for standalone toilet renovations.</p>
+              <span class="template-link">
+                Use this template <b aria-hidden="true">→</b>
+              </span>
+            </a>
+
+            <a class="template-card" href="#workspace-note">
+              <div class="template-topline">
+                <span class="template-icon">
+                  <svg
+                    aria-hidden="true"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+                    <circle cx="12" cy="13" r="4"></circle>
+                    <path d="M8 7h.01M11 7h5"></path>
+                  </svg>
+                </span>
+                <span class="template-number">04</span>
+              </div>
+              <h3>Laundry Renovation</h3>
+              <p>Tiling, cabinetry and installation work in one scope.</p>
+              <span class="template-link">
+                Use this template <b aria-hidden="true">→</b>
+              </span>
+            </a>
+          </div>
+        </section>
+
+        <section id="workspace-note" class="workspace-note">
+          <div class="note-icon">
+            <svg
+              aria-hidden="true"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+          </div>
+          <div>
+            <span>Builders coming next</span>
+            <h2>Your Atlas Quote home is ready for its four working pages.</h2>
+            <p>
+              Each menu item is prepared to connect to its own quote or invoice
+              builder without changing this home-page design.
+            </p>
+          </div>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="footer-logo-wrap">
+              <img
+                src="atlas-logo.png"
+                alt="Atlas Tiling and Bathroom Renovations"
+              />
+            </span>
+            <div>
+              <strong>Atlas Tiling and Bathroom Renovations</strong>
+            </div>
+          </div>
+          <p>Built by RizVision for Atlas Tiling and Bathroom Renovation</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
